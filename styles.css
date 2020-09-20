@@ -67,16 +67,8 @@ footer p {
   .home-grid {
     display: block;
   }
-
-  .home-grid, nav ul {
-    display: block;
-  }
-
-  .home-grid, nav ul, .banner-box {
-    display: block;
-  }
-
-    footer {
+    
+  footer {
     display: block;
     }
 
