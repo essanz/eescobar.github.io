@@ -5,15 +5,14 @@ body {
   font-family: 'Lato', arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
   font-family: 'Merriweather', arial, serif;
-  font-size: 1.8em;
   color: #112e44;
   line-height: 1em;
 }
 
 #content {
-  max-width: 960px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -21,7 +20,7 @@ main {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr;  
     background-color: white;
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 .home-headline {
@@ -35,29 +34,24 @@ main {
     grid-row: 2/3;
 }
 
-header {
-  background-color: #FBAF00;
-  border-radius: 10px;
-  margin: 3px;
-  padding: 0.25em;
-}
-
-header img {
-    float: right;
-    margin: 10px;
-    width: 25%;
-}
-
-.header-name h1 {
-    text-align: center;
-}
-
-footer {
+header, footer {
   background-color: #FBAF00;
   border-radius: 10px;
   margin: 3px;
   padding: 0.25em;
   align-items: center;
+}
+
+header img {
+    float: right;
+    margin-top: -50px;
+    margin-right: 10px;
+    width: 25%;
+    box-shadow: 0 15px 25px 0 rgba(95, 94, 94, 0.8);
+}
+
+.header-name h1 {
+    text-align: center;
 }
 
 footer p {
