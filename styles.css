@@ -29,9 +29,16 @@ main {
     padding-left: 10px;
 }
 
+hr {
+    width: 535px;
+    grid-column: 1/4;
+    grid-row: 2; 
+    margin-left: 10px; 
+}
+
 .home-nav {
     grid-column: 2/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 header, footer {
