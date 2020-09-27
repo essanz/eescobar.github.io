@@ -1,7 +1,6 @@
 @media only screen and (min-width: 560px) {
 
 main {
-    display: grid;
     grid-template-columns: 1fr 1fr;    
 }
 
@@ -10,10 +9,21 @@ section figure {
     padding-bottom: .5rem;
 }
 
-article.news {
-    clear: both;
-    column-count: 2;
-    column-rule: 0 solid #ddd;
+section.volkswagen {
+    grid-column: 1;
+    padding: 5px;
 }
+
+section.walmart {
+    grid-column: 2;
+    padding: 5px;
+}
+
+section.church {
+    grid-column: 2;
+    padding: 5px;
+}
+
+
 
 } /* end of media query */

@@ -5,20 +5,22 @@ header, footer, main {max-width: 75rem; margin: auto;}
 section figure {width: 100%;}
 
 main {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 section.volkswagen {
     grid-column: 1;
+    padding: 5px;
 }
 
 section.walmart {
     grid-column: 2;
+    padding: 5px;
 }
 
 section.church {
     grid-column: 3;
+    padding: 5px;
 }
 
 } /* end of media query */

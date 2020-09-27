@@ -24,7 +24,8 @@ header h2 {
 
 main {
     padding: 1rem 2%;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 main h1 {color: #FBAF00}
