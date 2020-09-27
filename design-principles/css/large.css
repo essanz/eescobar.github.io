@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1028px) {
+
+header, footer, main {max-width: 75rem; margin: auto;}
+
+section figure {width: 100%;}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.volkswagen {
+    grid-column: 1;
+}
+
+section.walmart {
+    grid-column: 2;
+}
+
+section.church {
+    grid-column: 3;
+}
+
+} /* end of media query */

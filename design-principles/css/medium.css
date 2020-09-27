@@ -1,0 +1,19 @@
+@media only screen and (min-width: 560px) {
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+section figure {
+    width: 100%;
+    padding-bottom: .5rem;
+}
+
+article.news {
+    clear: both;
+    column-count: 2;
+    column-rule: 0 solid #ddd;
+}
+
+} /* end of media query */
