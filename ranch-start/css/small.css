@@ -8,7 +8,7 @@ body {
 
 /* header rules here */
 header {
-    background-color: #17a8e4;
+    background-color: #FBAF00;
     padding: 1rem 2%;
 }
 header h1 {
@@ -53,7 +53,7 @@ main figcaption {text-align: center; font-size: .8rem;}
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #17a8e4;
+    background-color: #FBAF00;
 }
 
 .clearfix:after {
