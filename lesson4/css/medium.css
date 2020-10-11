@@ -1,0 +1,43 @@
+@media only screen and (min-width: 651px) {
+
+
+/*----------- BODY --------------*/
+
+main .placeholder {
+    background-color: rgb(196, 233, 240);
+    text-align: center;
+    border: 1px solid black;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+
+
+/*----------- HEADER --------------*/
+
+header img {width: 7.5%;}
+
+header h1 {font-size: 2rem;}
+
+header h2 {font-size: 1.5rem;}
+
+
+/*----------- NAVIGATION --------------*/
+nav button {display: none;}
+
+nav ul.hide {display: block;}
+
+nav ul {margin-left: 2%;}
+
+nav ul li {float: left;}
+
+nav ul li a{padding: .5rem 1rem; border: none;}
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
