@@ -1,0 +1,51 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 0 15px 25px 0 rgba(95, 94, 94, 0.8);
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid #b3b6b5;
+  }
+
+th, td {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+tbody tr {
+    background: #e7ffed;
+}
+
+tbody tr:nth-child(odd) {
+    background: #e7f0ed;
+}
+
+thead, tfoot{
+    background: #7fb9c2;
+}
+
+tfoot {
+    font-size: 75%;
+}
+
+thead th{
+    font-size: 2rem;
+}
+
+.secondLine th{
+    font-size: 1.2rem;
+    color: white;
+    background-color: #628ca6;
+}
+
+#novemberGoal {
+    background-color: #628ca6;
+    color: white;
+}
