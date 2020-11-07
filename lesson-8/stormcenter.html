@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Enrique Escobar">
+
+
+<title>How is Outside: 24/7 Weather | Preston, Idaho</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
+
+     
+</head>
+<body>
+<div id="headerWrapper">
+	<header class="clearfix">
+	    <img src="images/weather.png" alt="logo">
+        <h1>How is Outside</h1>
+        <h2>Weather 24/7</h2>
+    </header>
+</div>
+    
+<div id="navWrapper">
+    <nav class="clearfix">
+        <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>    
+        </ul>
+    </nav>
+</div>
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Storm Center</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" placeholder="Your Name" pattern="[a-zA-Z ]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip code<input type="number" name="zip" placeholder="12345"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm date <input type="date" name="completeDate"></label>
+                <label class="top">Storm type
+                    <input list="storms">
+                    <datalist id="storms">
+                        <option value=""></option>
+                        <option>Flash flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>option>
+                        <option>Tornado</option>
+                    </datalist>
+                </label>
+                <label class="slider">Storm severity:   <span id="ratingvalue">1</span><input type="range" min="1" max="10" step="1" value="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
+                <label class="top">Storm Region 
+                    <select name="region">
+                        <option value="" selected disabled>Select Region... &#9660;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>
+                </label>
+                <br>
+                <div class="top">In danger</div>
+                <label class="sbs"><input type="radio" name="audience" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="audience" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="audience" value="maybe"> Maybe</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information/comments</legend>
+                <textarea class="top" name="comments" rows="8" cols="100"></textarea>
+            </fieldset>
+            <input type="submit" value="Send information" class="submitBtn">
+        </form>
+    </main>
+    
+<div id="footerWrapper">  
+    <footer>
+        <p>&copy; 2020 How Is Outside | I. Enrique Escobar.</p>
+        <div id="date">Current Date</div>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+WebFont.load({
+    google: {
+    families: ['Fjalla One', 'Merriweather']
+    }
+});
+</script>
+<script src="js/scripts.js" defer></script>
+</body>
+</html>
