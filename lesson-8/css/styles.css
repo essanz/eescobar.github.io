@@ -6,7 +6,7 @@ table{
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    box-shadow: 0 15px 25px 0 rgba(95, 94, 94, 0.8);
+    box-shadow: 15px 15px 15px rgba(95, 94, 94, 0.8);
 }
 
 table, th, td {
