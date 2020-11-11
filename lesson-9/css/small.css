@@ -1,0 +1,30 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+div.cards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.cards section{
+    background-color: #b8b9cb;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+div.cards section p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div.cards section img {
+    width: 300px;
+    height: 400px;
+    margin: 18px;
+    box-shadow: 10px 10px 10px rgba(95, 94, 94, 0.8);
+}

@@ -1,0 +1,11 @@
+@media only screen and (min-width: 651px) {
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+}
