@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Enrique Escobar">
+
+
+<title>How is Outside: 24/7 Weather | Preston, Idaho</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
+
+     
+</head>
+<body>
+<div id="headerWrapper">
+	<header class="clearfix">
+	    <img src="images/weather.png" alt="logo">
+        <h1>How is Outside</h1>
+        <h2>Weather 24/7</h2>
+    </header>
+</div>
+    
+<div id="navWrapper">
+    <nav class="clearfix">
+        <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../preston/preston.html">Preston</a></li>
+            <li><a href="../sodasprings/sodasprings.html">Soda Springs</a></li>
+            <li><a href="../fishhaven/fishhaven.html">Fish Haven</a></li>
+            <li><a href="../stormcenter/stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>    
+        </ul>
+    </nav>
+</div>
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Image Gallery</h1>
+        <div class="pictureholder">
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/clouds.jpg" alt="clouds">
+                <div class="legend">
+                    <p><i>Clouds and blue sky.</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/cold.jpg" alt="cold">
+                <div class="legend">
+                    <p><i>Snow in the forest.</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/fog.jpg" alt="fog">
+                <div class="legend">
+                    <p><i>Fog on the mountains.</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/lightning.jpg" alt="lightning">
+                <div class="legend">
+                    <p><i>Night with lightning.</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/rain.jpg" alt="rain">
+                <div class="legend">
+                    <p><i>Rainy road.</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/rainbow.jpg" alt="rainbow">
+                <div class="legend">
+                    <p><i>Field with raibow.</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/snow.jpg" alt="snow">
+                <div class="legend">
+                    <p><i>Snowy road.</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/sunny.jpg" alt="sunny">
+                <div class="legend">
+                    <p><i>Sunny sky.</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="lazy" src="images/placeholder.jpg" data-src="images/clouds2.jpg" alt="clouds">
+                <div class="legend">
+                    <p><i>Cludy morning.</i></p>
+                </div>
+            </div>
+    </main>
+    
+<div id="footerWrapper">  
+    <footer>
+        <p>&copy; 2020 How Is Outside | I. Enrique Escobar.</p>
+        <div id="date">Current Date</div>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+WebFont.load({
+    google: {
+    families: ['Fjalla One', 'Merriweather']
+    }
+});
+</script>
+<script src="js/imagehandling.js"></script>
+<script src="js/scripts.js" defer></script>
+</body>
+</html>

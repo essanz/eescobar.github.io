@@ -84,36 +84,92 @@ main {
 
 main h1 {
     font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1.5rem 2%;
 }
 
-.pictureholder {
-    display: block;
-    text-align: center ;
+h2 {font-family: 'Fjalla One', sans-serif;}
+
+h3 {font-family: 'Fjalla One', sans-serif;}
+
+main .heroPlaceholder {
+    margin: .5rem 2%;
 }
 
-.pictureholder .card {
+main .heroPlaceholder img {
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+main .heroPlaceholder {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2px;
+}
+
+main .towns {
+    margin: .5rem 1%;
+}
+
+main .towns section {
+    background-color: #a5ecd7;
+    margin: 10px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    padding-top: 5px;
 }
 
-.pictureholder .card .legend {
-    padding: 8px;
+main .towns h2 {
+    font-size: 2.2rem;
+    margin-bottom: -5px;
 }
 
-.pictureholder .card img {
-    width: 95%;
-    margin: .8rem .5rem;
+
+main .towns h3 {
+    font-size: 85%;
+    color: rgb(70, 70, 70);
 }
 
-.pictureholder .card p {
-    font-size: 80%;
+main .towns img {
+    width: 75%;
+    margin: 10px;
+}
+
+main .articleHolder {margin: .5rem 2%;}
+
+main .articleHolder h2 {
+    text-align: center;
+}
+
+main .contact {
+    margin: .5rem 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+main .contact h2 {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+main .contact .address {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+main .contact .phone {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+main .contact .map {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+main .contact .map img {
+    width: 100%;
 }
 
 /*----------- FOOTER --------------*/

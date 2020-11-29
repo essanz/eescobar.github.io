@@ -1,0 +1,110 @@
+@media only screen and (min-width: 651px) {
+
+
+/*----------- BODY --------------*/
+
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: .5rem 2%;
+}
+
+#forecast .forecastTitle {
+    grid-row: 1;
+    grid-column: 1/6;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#forecast section {
+    grid-row: 2;
+    border: 1px solid black;
+}
+
+#forecast div {
+    background-color: #0278AE;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#forecast p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#forecast img {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+main .articleHolder img {
+    float: right;
+    width: 40%;
+    margin: 10px 0 10px 10px;
+}
+
+main .contact {
+    margin: .5rem 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+main .contact h2 {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+main .contact .address {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+main .contact .phone {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+main .contact .map {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+main .contact .map img {
+    width: 100%;
+}
+/*----------- HEADER --------------*/
+
+header img {width: 7.5%;}
+
+header h1 {font-size: 2rem;}
+
+header h2 {font-size: 1.5rem;}
+
+
+/*----------- NAVIGATION --------------*/
+nav button {display: none;}
+
+nav ul.hide {display: block;}
+
+nav ul {margin-left: 2%;}
+
+nav ul li {float: left;}
+
+nav ul li a{padding: .5rem 1rem; border: none;}
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
