@@ -131,7 +131,7 @@ main .heroPlaceholder .summaryBox h3 {
 
 main .heroPlaceholder .summaryBox .summaryTable th {
     font-family: 'Merriweather', serif;
-    color: white;
+    color: black;
 }
 
 main .heroPlaceholder .summaryBox .summaryTable td {
