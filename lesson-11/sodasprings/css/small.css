@@ -146,6 +146,15 @@ main #forecast h2 {
 
 #forecast {display: none;}
 
+main #events {
+    margin: .5rem 2%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #a5ecd7;
+}
+    
+
+
 main .articleHolder {margin: .5rem 2%;}
 
 main .articleHolder h2 {
