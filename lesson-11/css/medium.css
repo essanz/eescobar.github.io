@@ -49,7 +49,7 @@ main .towns section img {
 }
 
 main .towns section h3 {
-    font-size: 100;
+    font-size: 100%;
 }
 
 main .contact {
