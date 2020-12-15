@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Scoots official website.">
+<meta name="author" content="Enrique Escobar.">
+
+
+<title>Scoots - Cozumel | Home</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<!-- STYLE SHEETS -->
+<link href="css/index/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/index/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/index/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/index/large.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
+
+     
+</head>
+<body>
+<div id="headerWrapper">
+	<header class="clearfix">
+	    <img src="images/logo.png" alt="logo">
+        <h1>Scoots</h1>
+        <h2>Rental Co.</h2>
+    </header>
+</div>
+    
+<div id="navWrapper">
+    <nav class="clearfix">
+        <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>   
+        </ul>
+    </nav>
+</div>
+    
+<!-- CONTENT HERE -->
+    <main>
+        <table class="rentalTable"></table>
+        <br>
+        <div id="currWeather"></div>
+        <div id="forecast">
+            <h2 class="forecastTitle">Three Day Forecast</h2>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <div class="address">
+                <h3>Address:</h3>
+                <p>Scoots Rental Company<br>Carretera Playa San Juan km 2.3.<br>Cozumel.</p>
+            </div>
+            <div class="phone">
+                <h3>Phone:</h3>
+                <p>55 5555-1234</p>
+                <h3>Email:</h3>
+                <p>reservations@scootsrental.com</p>
+            </div>
+        </div>
+        <div class="social">
+            <h2>Social Media</h2>
+            <img src="#" alt="social media icon">
+        </div>
+    </main>
+    
+<div id="footerWrapper">  
+    <footer>
+        <p>&copy; 2020 Scoots Rental Company | I. Enrique Escobar.</p>
+        <p>Last Update: <span id="lastmodified"></span></p>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+WebFont.load({
+    google: {
+    families: ['Lato', 'Pacifico']
+    }
+});
+</script>
+<script src="js/rentals/scripts.js" defer></script>
+</body>
+</html>

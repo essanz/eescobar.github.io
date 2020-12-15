@@ -45,12 +45,12 @@ fetch(apiURL)
     
  }); //end of "then" fat arrow function
 
- const d = new Date();
+const d = new Date();
 
- const todayDayNumber = d.getDay();
+const todayDayNumber = d.getDay();
  
- let forecastDayNumber = todayDayNumber;
- console.log(forecastDayNumber);
+let forecastDayNumber = todayDayNumber;
+console.log(forecastDayNumber);
 
 const weekday = new Array(7);
 
@@ -62,7 +62,7 @@ weekday[4] = "Thursday";
 weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
- const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=97ca00bd5ff0eeaaef7178e88735af19&units=imperial";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=97ca00bd5ff0eeaaef7178e88735af19&units=imperial";
 
 fetch(forecastURL)
   .then((response) => response.json())

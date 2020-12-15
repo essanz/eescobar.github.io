@@ -1,0 +1,52 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+header, nav, main, footer {
+    max-width: 1024px;
+    margin:0 auto;
+}
+
+main .placeholder {
+    background-color: rgb(196, 233, 240);
+    text-align: center;
+    border: 1px solid black;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+    
+/*----------- BODY --------------*/
+
+div.towns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+main .towns section {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+main .towns section img {
+    width: 100%;
+}
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */

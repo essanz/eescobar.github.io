@@ -1,0 +1,106 @@
+{
+    "rentals":[
+        {
+            "type": "Honda Metro Scooter",
+            "img": "metro.jpg",
+            "capacity": 1,
+            "reservation":[
+                {
+                    "half": 20,
+                    "full": 30
+                }
+            ],
+            "walkin":[
+                {
+                    "half":25,
+                    "full":35
+                }
+            ]
+        },
+        {
+            "type": "Honda Dio Scooter",
+            "img": "dio.jpg",
+            "capacity": 2,
+            "reservation":[
+                {
+                    "half": 30,
+                    "full": 40
+                }
+            ],
+            "walkin":[
+                {
+                    "half":35,
+                    "full":45
+                }
+            ]
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "img": "pcx.jpg",
+            "capacity": 2,
+            "reservation":[
+                {
+                    "half": 40,
+                    "full": 50
+                }
+            ],
+            "walkin":[
+                {
+                    "half":45,
+                    "full":55
+                }
+            ]
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "img": "pioneer.jpg",
+            "capacity": 4,
+            "reservation":[
+                {
+                    "half": 50,
+                    "full": 70
+                }
+            ],
+            "walkin":[
+                {
+                    "half":60,
+                    "full":80
+                }
+            ]
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "img": "wrang4d.jpg",
+            "capacity": 5,
+            "reservation":[
+                {
+                    "half": 70,
+                    "full": 100
+                }
+            ],
+            "walkin":[
+                {
+                    "half":85,
+                    "full":125
+                }
+            ]
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "img": "wrang2d.jpg",
+            "capacity": 4,
+            "reservation":[
+                {
+                    "half": 60,
+                    "full": 85
+                }
+            ],
+            "walkin":[
+                {
+                    "half":70,
+                    "full":90
+                }
+            ]
+        }
+    ]
+}
