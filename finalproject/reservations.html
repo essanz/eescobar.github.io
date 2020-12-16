@@ -15,13 +15,13 @@
 
 <link rel="shortcut icon" href="images/favicon.ico">
 <!-- STYLE SHEETS -->
-<link href="css/index/normalize.css" rel="stylesheet">
+<link href="css/reservations/normalize.css" rel="stylesheet">
 <!-- phone-default -->
-<link href="css/index/small.css" rel="stylesheet">
+<link href="css/reservations/small.css" rel="stylesheet">
 <!-- enhance-tablet -->
-<link href="css/index/medium.css" rel="stylesheet">
+<link href="css/reservations/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
-<link href="css/index/large.css" rel="stylesheet">
+<link href="css/reservations/large.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
 
@@ -40,9 +40,9 @@
     <nav class="clearfix">
         <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
             <li><a href="tours.html">Tours</a></li>
             <li><a href="contact.html">Contact Us</a></li>   
         </ul>
@@ -51,37 +51,72 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <div class="articleHolder">
-            <h2>Explore Cozumel in one of our vehicles</h2>
-            <img src="images/jeep-beach.jpg" alt="Jeep on beach">
-            <p>No matter what type of explorer you are, we have the right vehicle for you. Check out our options and choose the right fit for you. You can reserve online or come visit us to pick the right vehicle for your next adventure in Cozumel.</p>
-            <p class="honda">Honda Motor Scooters</p>
-            <p class="atv">ATV Side-by-Side</p>
-            <p class="jeep">Jeep Rentals</p>
-            <input type="submit" value="Reserve your next adventure" class="submitBtn">
+        <div class="conditions">
+            <h2>Rental Information</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
         </div>
-        <br>
-        <div id="currWeather"></div>
-        <div id="forecast">
-            <h2 class="forecastTitle">Three Day Forecast</h2>
-        </div>
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <div class="address">
-                <h3>Address:</h3>
-                <p>Scoots Rental Company<br>Carretera Playa San Juan km 2.3.<br>Cozumel.</p>
-            </div>
-            <div class="phone">
-                <h3>Phone:</h3>
-                <p>55 5555-1234</p>
-                <h3>Email:</h3>
-                <p>reservations@scootsrental.com</p>
-            </div>
-        </div>
-        <div class="social">
-            <h2>Social Media</h2>
-            <img src="#" alt="social media icon">
-        </div>
+        <form method="get" action="thanks.html">
+            <fieldset class="yourInfo">
+                <legend>Your Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" placeholder="Your Name" pattern="[a-zA-Z ]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Home Country<input type="text" name="hcountry" placeholder="Your Country" pattern="[a-zA-Z ]{5,}"></label>
+                <label class="top">Cruise Line (if applicable)<input type="text" name="cruiseline" placeholder="Cruise Line" pattern="[a-zA-Z ]{5,}"></label>
+            </fieldset>
+            <fieldset class="rentalInfo">
+                <legend>Rental Information</legend>
+                <label class="top">Rental date <input type="date" name="completeDate"></label>
+                <label class="top">Number of days 
+                    <input list="days">
+                    <datalist id="days">
+                        <option value=""></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </datalist>
+                </label>
+                <label class="top">Rental type 
+                    <input list="rtype">
+                    <datalist id="rtype">
+                        <option value=""></option>
+                        <option>Honda Metro Scooter</option>
+                        <option>Honda Dio Scooter</option>
+                        <option>Honda PCX150 Scooter</option>
+                        <option>Honda Pioneer ATV</option>
+                        <option>Jeep Wrangler - 4 door with a/c</option>
+                        <option>Jeep Wrangler - 2 door</option>
+                    </datalist>
+                </label>
+                <label class="top">Number of vehicles 
+                    <input list="number">
+                    <datalist id="number">
+                        <option value=""></option>
+                        <option>1</option>
+                        <option>2</option>
+                    </datalist>
+                </label>
+            </fieldset>
+            <fieldset class="comments">
+                <legend>Special accomodations/comments</legend>
+                <textarea class="top" name="comments" rows="8" cols="100"></textarea>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit Reservation" class="submitBtn">
+        </form>
     </main>
     
 <div id="footerWrapper">  
@@ -99,6 +134,6 @@ WebFont.load({
     }
 });
 </script>
-<script src="js/scripts.js" defer></script>
+<script src="./js/reservations/scripts.js" defer></script>
 </body>
 </html>

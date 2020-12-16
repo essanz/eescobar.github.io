@@ -12,12 +12,18 @@ function toggleMenu () {
 }
 
 
+const constURL = new Request('https://github.com/essanz/eescobar.github.io/blob/master/finalproject/data/data.json', {
+        mode: 'no-cors',
+    });
 
-fetch('./data.json')
-  .then((response) => response.json())
-  .then((dataInfo) => {
+fetch(constURL)
+  .then(function (response) {
+    return response.json();
+  })
 
-  console.log(dataInfo);
+  .then(function (jsonObject) {
+    const dataInfo = jsonObject['rentals'];
+    console.log(dataInfo);
 
   for (i = 0; i < 24; i++) {
     var time = forecastInfo.list[i].dt_txt;
@@ -50,9 +56,6 @@ fetch('./data.json')
       theDay.appendChild(icon);
 
       document.getElementById('forecast').appendChild(theDay);
-  
-
-  
     }
   }
 });
