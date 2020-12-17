@@ -6,14 +6,6 @@ header, nav, main, footer {
     margin:0 auto;
 }
 
-main .placeholder {
-    background-color: rgb(196, 233, 240);
-    text-align: center;
-    border: 1px solid black;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
-}
-    
 /*----------- BODY --------------*/
 
 .article {
