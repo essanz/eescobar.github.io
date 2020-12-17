@@ -18,7 +18,6 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
     //Once it comes back, display it to the console.
-    console.log(weatherInfo);
     let temp = document.createElement("p");
     temp.textContent = weatherInfo.main.temp + ' \u00B0F';
 
@@ -27,7 +26,7 @@ fetch(apiURL)
 
     let humidity = document.createElement("p");
     humidity.textContent = weatherInfo.main.humidity + ' %';
-    console.log(weatherInfo.main.temp);
+
 
     let humTitle = document.createElement("p");
     humTitle.textContent = 'Current Humidity';
@@ -66,7 +65,7 @@ const d = new Date();
 const todayDayNumber = d.getDay();
  
 let forecastDayNumber = todayDayNumber;
-console.log(forecastDayNumber);
+
 
 const weekday = new Array(7);
 
@@ -84,7 +83,6 @@ fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastInfo) => {
 
-  console.log(forecastInfo);
 
   for (i = 0; i < 24; i++) {
     var time = forecastInfo.list[i].dt_txt;
@@ -98,11 +96,11 @@ fetch(forecastURL)
 
       let theDayName = document.createElement("div");
       theDayName.textContent = weekday[forecastDayNumber];
-      console.log(">"+weekday[forecastDayNumber]);
+
       
       let temp = document.createElement("p");
       temp.textContent = forecastInfo.list[i].main.temp + ' \u00B0F';
-      console.log(forecastInfo.list[i].main.temp);
+
 
       let iconFile = forecastInfo.list[i].weather[0].icon;
       let iconPath = "https://openweathermap.org/img/w/" + iconFile + ".png";
