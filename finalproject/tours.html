@@ -15,15 +15,13 @@
 
 <link rel="shortcut icon" href="images/favicon.ico">
 <!-- STYLE SHEETS -->
-<link href="css/index/normalize.css" rel="stylesheet">
+<link href="css/tours/normalize.css" rel="stylesheet">
 <!-- phone-default -->
-<link href="css/index/small.css" rel="stylesheet">
+<link href="css/tours/small.css" rel="stylesheet">
 <!-- enhance-tablet -->
-<link href="css/index/medium.css" rel="stylesheet">
+<link href="css/tours/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
-<link href="css/index/large.css" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
+<link href="css/tours/large.css" rel="stylesheet">
 
      
 </head>
@@ -40,10 +38,10 @@
     <nav class="clearfix">
         <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="tours.html">Tours</a></li>
+            <li class="active"><a href="tours.html">Tours</a></li>
             <li><a href="contact.html">Contact Us</a></li>   
         </ul>
     </nav>
@@ -51,36 +49,26 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <div class="articleHolder">
-            <h2>Explore Cozumel in one of our vehicles</h2>
-            <img src="images/jeep-beach.jpg" alt="Jeep on beach">
-            <p>No matter what type of explorer you are, we have the right vehicle for you. Check out our options and choose the right fit for you. You can reserve online or come visit us to pick the right vehicle for your next adventure in Cozumel.</p>
-            <p class="honda">Honda Motor Scooters</p>
-            <p class="atv">ATV Side-by-Side</p>
-            <p class="jeep">Jeep Rentals</p>
-            <input type="submit" value="Reserve your next adventure" class="submitBtn">
-        </div>
-        <br>
-        <div id="currWeather"></div>
-        <div id="forecast">
-            <h2 class="forecastTitle">Three Day Forecast</h2>
-        </div>
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <div class="address">
-                <h3>Address:</h3>
-                <p>Scoots Rental Company<br>Carretera Playa San Juan km 2.3.<br>Cozumel.</p>
-            </div>
-            <div class="phone">
-                <h3>Phone:</h3>
-                <p>55 5555-1234</p>
-                <h3>Email:</h3>
-                <p>reservations@scootsrental.com</p>
-            </div>
-        </div>
-        <div class="social">
-            <h2>Social Media</h2>
-            <img src="#" alt="social media icon">
+        <h1>Tour these amazing places in our vehicles.</h1>
+        <div class="article">
+            <h2 class="palancarTitle">Palancar Beach and Reef.</h2>
+            <p class="palancarArticle">Join the Cozumel Snorkeling Tour of Palancar. This is a fun, half-day guided adventure snorkeling among some colorful coral. The island itself is a popular destination for snorkelers and scuba divers with plenty of places to choose from for your next adventure.</p>
+            <img src="./images/palancar.jpg" alt="Palancar Beach" class="palancarImg">
+            <h2 class="chankTitle">Laguna Chankanaab.</h2>
+            <p class="chankArticle">This is one of the most insteresting attractions in Cozumel. Located just over 4 miles from San Miguel de Cozumel, it is a popular spot for outings by its crystal-clear waters and tropical fish.</p>
+            <img src="./images/chankanaab.jpg" alt="Laguna Chankanaab" class="chankImg">
+            <h2 class="gervasioTitle">San Gervasio.</h2>
+            <p class="gervasioArticle">This is the most important of the more than 30 mayan sites discovered around Cozumel. Built in 800 AD and located 10 miles from San Miguel de Cozumel. For centuries, this has been the focal point of the island's religious life and a place of pilgrimage from across the Mayan empire.</p>
+            <img src="./images/sangervasio.jpg" alt="San Gervasio" class="gervasioImg">
+            <h2 class="mparkTitle">Discover Mexico Park.</h2>
+            <p class="mparkArticle">Popular among cruise ship passengers, Discover Mexico Park Cozumel is one of the newest attractions on the island. This amazing park showcases traditional art, music, food, and traditional dances.</p>
+            <img src="./images/mexicopark.jpg" alt="Discover Mexico Park" class="mparkImg">
+            <h2 class="stingrayTitle">Stingray Beach.</h2>
+            <p class="stingrayArticle">Join in the fun going on a guided swin with stingrays in the facility's enclosed bays where you will learn many fascinating facts about this animals, including a chance to feed and touch them.</p>
+            <img src="./images/stingray.jpg" alt="Stingray Beach" class="stingrayImg">
+            <h2 class="dolphinTitle">Dolphins.</h2>
+            <p class="dolphinArticle">If you are looking for a chance to see this amazing mammals up close or swim with them, Cozumel has many options for you! Dolphinaris Cozumel or Dolphin Discovery Cozumel are two of the top choices.</p>
+            <img src="./images/dolphins.jpg" alt="Dolphins" class="dolphinImg">
         </div>
     </main>
     
@@ -99,6 +87,6 @@ WebFont.load({
     }
 });
 </script>
-<script src="js/scripts.js" defer></script>
+<script src="js/tours/scripts.js" defer></script>
 </body>
 </html>

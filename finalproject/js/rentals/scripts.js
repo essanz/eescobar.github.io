@@ -12,7 +12,7 @@ function toggleMenu () {
 }
 
 
-const constURL = new Request('https://github.com/essanz/eescobar.github.io/blob/master/finalproject/data/data.json', {
+const constURL = new Request('../../data/data.json', {
         mode: 'no-cors',
     });
 

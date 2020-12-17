@@ -6,7 +6,7 @@
 <meta name="author" content="Enrique Escobar.">
 
 
-<title>Scoots - Cozumel | Home</title>
+<title>Scoots - Cozumel | Contact Us</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,13 +15,13 @@
 
 <link rel="shortcut icon" href="images/favicon.ico">
 <!-- STYLE SHEETS -->
-<link href="css/index/normalize.css" rel="stylesheet">
+<link href="css/contact/normalize.css" rel="stylesheet">
 <!-- phone-default -->
-<link href="css/index/small.css" rel="stylesheet">
+<link href="css/contact/small.css" rel="stylesheet">
 <!-- enhance-tablet -->
-<link href="css/index/medium.css" rel="stylesheet">
+<link href="css/contact/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
-<link href="css/index/large.css" rel="stylesheet">
+<link href="css/contact/large.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
 
@@ -40,48 +40,59 @@
     <nav class="clearfix">
         <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="tours.html">Tours</a></li>
-            <li><a href="contact.html">Contact Us</a></li>   
+            <li class="active"><a href="contact.html">Contact Us</a></li>   
         </ul>
     </nav>
 </div>
     
 <!-- CONTENT HERE -->
     <main>
-        <div class="articleHolder">
-            <h2>Explore Cozumel in one of our vehicles</h2>
-            <img src="images/jeep-beach.jpg" alt="Jeep on beach">
-            <p>No matter what type of explorer you are, we have the right vehicle for you. Check out our options and choose the right fit for you. You can reserve online or come visit us to pick the right vehicle for your next adventure in Cozumel.</p>
-            <p class="honda">Honda Motor Scooters</p>
-            <p class="atv">ATV Side-by-Side</p>
-            <p class="jeep">Jeep Rentals</p>
-            <input type="submit" value="Reserve your next adventure" class="submitBtn">
-        </div>
-        <br>
-        <div id="currWeather"></div>
-        <div id="forecast">
-            <h2 class="forecastTitle">Three Day Forecast</h2>
+        <div class="info">
+            <h1>Two convenient locations.</h1> 
+                <p>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</p>
+                <p>Rentals may be returned to either location.</p>
         </div>
         <div class="contact">
             <h2>Contact Us</h2>
-            <div class="address">
-                <h3>Address:</h3>
-                <p>Scoots Rental Company<br>Carretera Playa San Juan km 2.3.<br>Cozumel.</p>
+            <div class="addressOne">
+                <h3 class="title">Location One:</h3>
+                <p class="addr">Scoots Rental Company<br>Carretera Playa San Juan km 2.3.<br>Cozumel.</p>
+                <h3 class="phone">Phone:</h3>
+                <p class="ph">55 5555-1234</p>
+                <iframe class="locMap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7474.407219436949!2d-86.96011736881958!3d20.497877895114673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sgt!4v1608149070243!5m2!1ses-419!2sgt" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-            <div class="phone">
+            <div class="addressTwo">
+                <h3>Location Two:</h3>
+                <p>Scoots Rental Company<br>Calle 8 Norte.<br>Cozumel.</p>
                 <h3>Phone:</h3>
-                <p>55 5555-1234</p>
+                <p>55 5555-1230</p>
+                <iframe class="locMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1868.4202829068697!2d-86.94717821099815!3d20.512761068445176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMwJzQ5LjAiTiA4NsKwNTYnNDguMCJX!5e0!3m2!1ses-419!2sgt!4v1608148602857!5m2!1ses-419!2sgt" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="email">
                 <h3>Email:</h3>
                 <p>reservations@scootsrental.com</p>
             </div>
+            <div class="social">
+                <h2>Social Media</h2>
+                <img src="#" alt="social media icon">
+            </div>
         </div>
-        <div class="social">
-            <h2>Social Media</h2>
-            <img src="#" alt="social media icon">
-        </div>
+        <form method="get" action="thankscomments.html">
+            <fieldset class="comment">
+                <legend>Your comments are welcome!</legend>
+                <label class="top">Name*<input type="text" name="fname" placeholder="Your Name" pattern="[a-zA-Z ]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>
+                <fieldset class="comments">
+                    <legend>Comments</legend>
+                    <textarea class="top" name="comments" rows="8" cols="100"></textarea>
+                </fieldset>
+                <br>
+                <input type="submit" value="Send comments" class="submitBtn">
+            </form>
     </main>
     
 <div id="footerWrapper">  
@@ -99,6 +110,6 @@ WebFont.load({
     }
 });
 </script>
-<script src="js/scripts.js" defer></script>
+<script src="js/contact/scripts.js" defer></script>
 </body>
 </html>
