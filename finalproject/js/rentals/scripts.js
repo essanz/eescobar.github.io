@@ -13,7 +13,6 @@ function toggleMenu () {
 
 
 const constURL = new Request('../../data/data.json', {
-        mode: 'no-cors',
     });
 
 fetch(constURL)
